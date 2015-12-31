@@ -10,7 +10,7 @@ export default class Vote extends React.Component {
 	}
 
 	hasVotedFor(entry) {
-		return this.props.hasVotedFor === entry
+		return this.props.hasVoted === entry
 	}
 
 	render() {

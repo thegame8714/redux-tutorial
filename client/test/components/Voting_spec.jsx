@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactTestUtils from 'react-addons-test-utils';
-import Voting from '../../src/components/Voting';
+import {Voting} from '../../src/components/Voting';
 import {expect} from 'chai';
 
 const {renderIntoDocument, scryRenderedDOMComponentsWithTag, Simulate} = ReactTestUtils;
@@ -41,7 +41,7 @@ describe('Voting', () => {
 
 		expect(buttons.length).to.equal(2);
 		expect(buttons[0].hasAttribute('disabled')).to.equal(true);
-		expect(buttons[1].hasAttribute('disables')).to.equal(true);
+		expect(buttons[1].hasAttribute('disabled')).to.equal(true);
 	});
 
 	it('adds label to the voted entry', () => {
